@@ -8,7 +8,6 @@ const usuarioCorreto = {
 };
 
 
-// let login = document.getElementById('login');
 const username = document.getElementById('username')
 const password = document.getElementById('password')
 
@@ -16,7 +15,7 @@ const password = document.getElementById('password')
 const handleChangeUserName = (e) => {user.username=e.target.value}
 const handleChangePassword = (e) => {user.password=e.target.value}
 
-// login.addEventListener('click', clicou)
+
 username.addEventListener('change', handleChangeUserName )
 password.addEventListener('change', handleChangePassword)
 
@@ -47,6 +46,6 @@ if (user.username == db.nameadd && user.password == db.senha) {
 
 window.onload = () => {
     localStorage.setItem('db',JSON.stringify(usuarioCorreto))
-}
+};
 
 
